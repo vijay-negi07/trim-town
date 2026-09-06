@@ -1,0 +1,14 @@
+{
+  "name": "trimtown",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["backend", "admin-dashboard"],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:admin": "npm run dev --workspace=admin-dashboard",
+    "build:backend": "npm run build --workspace=backend",
+    "build:admin": "npm run build --workspace=admin-dashboard",
+    "db:migrate": "npm run db:migrate --workspace=backend",
+    "db:seed": "npm run db:seed --workspace=backend"
+  }
+}
